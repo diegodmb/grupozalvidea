@@ -16,7 +16,7 @@ nav{
     width: 100vw;
     display: grid;
     background: white;
-    grid-template-columns: 5% 40% 1fr 5%;
+    grid-template-columns: 5% 35% 1fr 5%;
     min-height: 10vh;
     position: fixed;
     z-index: 100;
@@ -69,6 +69,7 @@ hr{
     display: flex;
     justify-content: space-around;
     align-self: center;
+    font-size: 14px;
 } 
 
 .nav-item{
@@ -424,7 +425,7 @@ a {
     color: #dddddd;
     width:100%;
     background:#888888;
-    min-height:65.2px;
+    min-height:65.7px;
     justify-content: center;
     font-size: 16px;
     height: 50%;

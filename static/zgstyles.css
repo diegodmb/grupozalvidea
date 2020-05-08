@@ -717,8 +717,8 @@ nav {
   display: -ms-grid;
   display: grid;
   background: white;
-  -ms-grid-columns: 5% 40% 1fr 5%;
-      grid-template-columns: 5% 40% 1fr 5%;
+  -ms-grid-columns: 5% 35% 1fr 5%;
+      grid-template-columns: 5% 35% 1fr 5%;
   min-height: 10vh;
   position: fixed;
   z-index: 100;
@@ -784,6 +784,7 @@ hr {
       justify-content: space-around;
   -ms-flex-item-align: center;
       align-self: center;
+  font-size: 14px;
 }
 
 .nav-item {
@@ -1212,7 +1213,7 @@ a {
   color: #dddddd;
   width: 100%;
   background: #888888;
-  min-height: 65.2px;
+  min-height: 65.7px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
