@@ -1,0 +1,677 @@
+@media (max-width: 600px) {
+
+body{
+    max-width: 100vw;
+}
+    .nav-item{
+        display: none;
+    }
+
+    .logo a{
+        line-height: 15px;
+        padding-left: 5px;
+        font-size: 1em;
+        grid-column: 2/3;
+        &:hover{background: transparent;}
+    }
+
+    .tinto{
+        color: #5e2129;
+        font-size: 10%;
+        position: relative;
+        top: -1px;
+    }
+    .tinto-small{
+        color: #5e2129;
+        font-size: 0.5em;
+        text-align: center;
+    }
+    .small{
+        font-size: 0.5em;
+        line-height: 6px;
+        text-align: center;
+    }
+    hr{
+        display: none;
+    }
+
+    .headline{
+        position: absolute;
+        top: 14%;
+        left: 5vw;
+        font-size: 1em;
+    }
+    .promo{
+        padding-bottom: 10%;
+    }
+
+    .min{
+        font-style: italic;
+    }
+
+    
+    /* Fin Landing Page */
+
+    /* Inicio Main */
+    .main{
+        display: grid;
+        grid-template-rows: repeat(6, 100vh);
+        grid-template-areas: 
+        "nosotros"
+        "divisiones"
+        "expertise"
+        "clientes"
+        "blog"
+        "contacto";
+        width: 95vw;
+
+    }
+    /* Inicio Sobre Nosotros */
+
+    .nosotros{
+        grid-area: nosotros;
+        display: grid;
+        grid-template-columns: 5% auto 5%;
+        grid-template-rows: 1.5fr 2fr 1fr;
+        grid-template-areas: 
+            ". aheader ."
+            ". aabout ."
+            ". cv .";
+        height: 100vh;
+        width: 100vw;
+        
+    }
+
+    .aheader{
+        grid-area: aheader;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        margin-top: 16vh;
+    }
+    .compromiso{
+        font-size: 30px;
+        font-style: italic;
+        font-weight: lighter;
+        color: linear-gradient(to right bottom, #272829, #37383b, #272829);
+        align-self: left;
+
+    }
+
+    .aabout{
+        grid-area: aabout;
+        text-align: justify;
+        justify-self: center;
+        align-items: center;
+        font-size: 0.5em;
+
+    }
+    .firma{
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        background: white;
+    }
+    
+    .dec img{
+        display: none;
+    }
+
+    .cv{
+        grid-area: cv;
+        font-size: 0.7em;
+        text-align: right;
+        padding-top: 5%;
+
+    }
+    /* Fin Nosotros */
+
+    /* Inicio Divisiones */
+    .divisiones{
+        grid-area: divisiones;
+        display: grid;
+        grid-template-columns: 6% 1.2fr 5% 1.7fr 3%;
+        grid-template-rows: 8% 1fr 1fr 1fr;
+        grid-template-areas: 
+            ". . . . ."    
+            ". dheader . dinfo ."
+            ". ddesc . dinfo ."
+            ". . . dinfo .";
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .dheader{
+        grid-area: dheader;
+        align-content: left;
+        padding-top: 20vh;
+        text-align: center;
+    }
+    .promo-header{
+        text-align: left;
+        font-style: normal;
+    }
+
+    .ddesc{
+        grid-area: ddesc;
+        align-content: justify;
+        justify-self: center;
+        padding-top: 4vh;
+        text-align: justify;
+    }
+
+
+    .div-holder {
+        grid-area: dinfo;
+        padding-top: 5vh;
+        background:transparent;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-holder * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+    }
+    .cardhead{
+        text-align: right;
+        text-justify: center;
+        color: white;
+        font-size: 26px;
+        padding-bottom: 5px;
+    }
+
+    .card1 {
+        grid-area: card1;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        text-align: justify;
+        padding: 20px;
+        width: 330px;
+        background-image: linear-gradient(rgba(112,99,64,0.8)),  url(gallery/preven.jpg); 
+        object-fit: cover;
+        background-size: cover;
+        color: white;
+        border: 3px solid #5e2129;
+    }
+    
+    .card1:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    
+    .card2 {
+        grid-area: card2;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        text-align: justify;
+        padding: 20px;
+        width: 330px;
+        border: 3px solid #5e2129;
+        background-image: linear-gradient(rgba(112,99,64,0.8)), url(gallery/desarrollo4.jpg); 
+        object-fit: cover;
+        background-size: cover;
+        color: white;
+    }
+    
+    .card2:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .card3 {
+        grid-area: card3;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        text-align: justify;
+        padding: 20px;
+        width: 330px;
+        border: 3px solid #5e2129;
+        justify-self: baseline;
+        background-image: linear-gradient(rgba(112,99,64,0.8)), url(gallery/gestion1.jpg); 
+        object-fit: cover;
+        background-size: cover;
+        color: white;
+    }
+    
+    .card3:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .card4 {
+        grid-area: card4;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        text-align: justify;
+        padding: 20px;
+        width: 330px;
+        border: 3px solid #5e2129;
+        justify-items: end;
+        background-image:linear-gradient(rgba(112,99,64,0.8)), url(gallery/coord1.jpg); 
+        object-fit: cover;
+        background-size: cover;
+        color: white;
+    }
+    
+    .card4:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+
+    /*Fin Divisiones */
+
+    /* Inicio Expertise */
+    .expertise{
+        grid-area: expertise;
+        display: grid;
+        grid-template-columns: 20% 1fr 1fr 20%;
+        grid-template-rows: 10% 10% auto;
+        grid-template-areas:
+            ". . . ."
+            ". eheader edesc ."
+            ". einfo einfo .";
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .eheader{
+        grid-area: eheader;
+        align-content: center;
+        padding-top: 1vh;
+        text-align: center;
+    }
+    .experiencia{
+        font-size: 1.5em;
+    }
+
+    .edesc{
+        grid-area: edesc;
+        text-align: left;
+        align-self: center;
+    }
+    .exp-holder {
+        grid-area: einfo;
+        max-width: 900px;
+        height:500px;
+        font-size: 13px;
+        background:white;
+        width: 100vh;
+    }
+
+    .exp-holder * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    .esp-headlines {
+        list-style: none;
+        position: relative;
+    }
+    
+    .esp-headlines li {
+        padding: 15px;
+        position: relative;
+        z-index: 20;
+        color: #dddddd;
+        width:100%;
+        background:#888888;
+        min-height:75px;
+        justify-content: center;
+        font-size: 16px;
+        height: 50%;
+    }
+    .nh-anim {
+        -webkit-transition: all .25s ease-out;
+        -moz-transition: all .25s ease-out;
+        -o-transition: all .25s ease-out;
+        transition: all .25s ease-out;
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    .esp-headlines li:hover, a:hover {
+        cursor: pointer;
+    }
+    li.selected{
+        background:#333333;
+    }
+    .esp-headlines .highlight {
+        width: 100%;
+        background: #888888;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        }
+    .esp-headlines {
+        float: left;
+        width: 30%;
+    }
+    .esp-preview {
+        float: left;
+        width: 70%;
+        position: relative;
+        z-index: 5;
+        position: relative;
+    }
+    
+    .esp-preview img {
+        display: block;
+        width: 100%;
+        height: 500px;
+        margin: 0 auto 5px auto;
+    } 
+    
+    .esp-content {
+        position: absolute;
+        background: #333333;
+        z-index: 10;
+        padding: 10px;
+        top: 0;
+        left: 0;
+        right:0;
+        display: none;
+        width: 800px;
+        }
+
+    .resume{
+    position:absolute;
+    bottom:15px;
+    left:10px;
+    right:10px;
+    background:rgba(0,0,0,0.8);
+    padding:10px;
+    color:#bbb;
+    }
+    a.title {
+    display:block;
+    color:#dddddd;
+    margin:0 0 12px 0;
+    font-size:18px;
+    }
+    a.title:hover{
+    background:none;
+    text-decoration:underline;
+    }
+    .top-content {
+        display: block;
+    } 
+    /* Fin Expertise
+
+    /*Inicio Clientes y Alianzas */
+
+    .clientes{
+        grid-area: clientes;
+        display: grid;
+        grid-template-columns: 50% 2% 20% 5% 20% 3%;
+        grid-template-rows: 12% 10% 50% 5%;
+        align-content: start;
+        grid-template-areas: 
+            ". . . . . ."    
+            ".  . botclientes . botalianzas ."
+            ". . cl . al ."
+            ". . . . . .";
+        height: 100vh;
+        width: 100vw;
+        z-index: 1;
+
+    }
+    .botclientes{
+        grid-area: botclientes;
+        z-index: 3;
+        text-align: left;
+        font-size: 2em;
+        color: #60615C;
+
+    }
+
+    .botalianzas{
+        grid-area: botalianzas;
+        z-index: 3;
+        text-align: left;
+        font-size: 2em;
+        color: #60615C;
+
+    }
+    .climg{      
+        background-image:url(gallery/wn6.jpg); 
+        object-fit: cover;
+        position: absolute;
+        background-size: cover;
+        height: 100vh;
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .cl{
+        grid-area: cl;
+        display: flex;
+        flex-flow: row wrap;
+        list-style-type: none;
+        z-index: 5;
+    }
+    .cli{
+        width: 24vw;
+        color: black;
+        font-size: 16px;
+        padding-bottom: 20px;
+
+    }
+
+    .al{
+        grid-area: al;
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+
+    }
+    .ali{
+        color: black;
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+
+
+    /* Fin Clientes*/
+
+
+    /* Inicio Blog */
+
+    .blog{
+        grid-area: blog;
+        display: grid;
+        grid-template-columns: 4% 1fr 4%;
+        grid-template-rows: 15% 6fr 1fr;
+        grid-template-areas: 
+            " . . ."
+            ". news ."
+            ". links .";
+    }
+    .links{
+        grid-area: links;
+        display: flex;
+        justify-content: space-around;
+        color: black;
+    }
+    .links li{
+        list-style: none;
+        padding-top: 30px;
+        text-decoration: none;
+    }
+
+    .links a{
+        padding: 5px;
+        color: black;
+        border-radius: 5px;
+    }
+    .links a:hover{
+        text-decoration: underline;
+    }
+
+    .links h1{
+        font-weight: 0.5em;
+    }
+
+    .news{
+        grid-area: news;
+    }
+    .tnews{
+        border-bottom: 1px solid black;
+        font-size: 13px;
+        padding: 3px;
+        margin: 3px;
+    }
+    .thead{
+        background-color: #5e2129;
+        color: white;
+        text-align: center;
+    }
+    td{
+        padding: 3px 8px 3px 8px;
+    }
+
+    /*fin blog
+
+
+    /* Inicio Contacto */
+
+    .contacto{
+        grid-area: contacto;
+        display: grid;
+        grid-template-columns: 5% 1fr 8% 1fr 15%;
+        grid-template-rows: 10% 48% auto;
+        grid-template-areas: 
+        " . . . . ."
+        ". saludos . formulario ."
+        ". datos . formulario .";
+        background: linear-gradient(135deg, #8C292F 20%, #333333 80%);
+
+    }
+
+    .saludos{
+        grid-area: saludos;
+        padding-top: 15vh;
+        color: #bfbfbf; 
+    }
+    .formulario{
+        grid-area: formulario;
+        padding-top: 10vh;
+    }
+    .datos{
+        grid-area: datos;
+        color: #bfbfbf;
+        font-size: large;
+        height: auto;
+        padding: 10px;
+    }
+
+    #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+    #contact {
+        background:#F9F9F9;
+        padding:25px;
+        margin:50px 0px;
+    }
+
+    #contact h4 {
+        margin:5px 0 15px;
+        display:block;
+        font-size:13px;
+    }
+
+    fieldset {
+        border: medium none !important;
+        margin: 0 0 10px;
+        min-width: 100%;
+        padding: 0;
+        width: 100%;
+    }
+
+    #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+        width:100%;
+        border:1px solid #CCC;
+        background:#FFF;
+        margin:0 0 5px;
+        padding:10px 10px;
+    }
+
+    #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+        -webkit-transition:border-color 0.3s ease-in-out;
+        -moz-transition:border-color 0.3s ease-in-out;
+        transition:border-color 0.3s ease-in-out;
+        border:1px solid #AAA;
+    }
+
+    #contact textarea {
+        height:100px;
+        max-width:100%;
+    resize:none;
+    }
+
+    #contact button[type="submit"] {
+        cursor:pointer;
+        width:100%;
+        border:none;
+        background:#60615C;
+        color:#FFF;
+        margin:0 0 5px;
+        padding:10px;
+        font-size:15px;
+    }
+
+    #contact button[type="submit"]:hover {
+        background:#272829;
+        -webkit-transition:background 0.3s ease-in-out;
+        -moz-transition:background 0.3s ease-in-out;
+        transition:background-color 0.3s ease-in-out;
+    }
+
+    #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); 
+    }
+
+    #contact input:focus, #contact textarea:focus {
+        outline:0;
+        border:1px solid #999;
+    }
+    ::-webkit-input-placeholder {
+    color:#888;
+    }
+    :-moz-placeholder {
+    color:#888;
+    }
+    ::-moz-placeholder {
+    color:#888;
+    }
+    :-ms-input-placeholder {
+    color:#888;
+    }
+
+    .footer{
+        min-height: 5vh;
+        display: flex;
+        background: #5e2129;
+        font-size: 12px;
+        color: white;
+        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-top: 2px solid #bfbfbf;
+        position: fixed;
+        bottom: 0;
+        z-index: 10;
+        background:#272829;
+        width: 99vw;
+    }
+
+}

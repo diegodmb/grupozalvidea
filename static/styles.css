@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.tinto{
+    color: #bfbfbf;
+    font-size: 12px;
+    line-height: 5px;    
+}
+
+.tinto-small{
+    color: #bfbfbf;
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+.small{
+    font-size: 9px;
+}
+
+.tinto-menu{
+    color: #bfbfbf;
+    position: relative;
+    top: -2px;
+    font-size: 5px;
+
+}
+.brand{
+    text-decoration: none;
+    font-size: 50px;
+    color: #bfbfbf;
+    font-weight: 50px;
+}
+nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20%;
+    height: 15vh;
+    background-color: #8C292F;
+    color: #bfbfbf;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    border-bottom: 2px solid #bfbfbf ;
+
+}
+.logo{
+    letter-spacing: 5px;
+}
+main{
+    height: 86vh;
+    display: grid;
+    grid-template-rows: 13% 2fr 1.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+        ". . ." 
+         ". desc ."
+         ". box1 ."
+         "box2 . box3"
+         "footer footer footer";
+    background: url("wp.jpg");
+  /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+} 
+.desc{
+    grid-area: desc;
+    align-self: flex-end;
+    justify-self: center;
+
+}
+.box1{
+    grid-area: box1;
+    display: flex;
+    color: white;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    align-items: center;
+    justify-content: space-around;
+}
+.box2{
+    grid-area: box2;
+    justify-items: center;
+    display: flex;
+    color: white;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    align-self: flex-start;
+    justify-self: center;
+    font-size: 12px;
+}   
+.box3{
+    grid-area: box3;
+    justify-items: center;
+    display: flex;
+    color: white;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    align-self: flex-start;
+    justify-self: center;
+    font-size: 12px;
+}
+
+.botbrands{
+    cursor: pointer;
+    border: 1px solid white;
+    width: 270px;
+    height: 60px;
+    text-align: center;
+    padding: 5px;
+    justify-content: center;
+
+}
+
+.botbrands:hover{
+    background-color: #8C292F;
+    cursor: pointer;
+}
+
+
+.botbrands, a{
+    text-decoration: none;
+    color: #bfbfbf;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.lineazg{
+    width: 228px;
+    margin-left: 20px;
+    border-color: transparent;
+    background-color: #bfbfbf;
+
+
+}
+.linealhc{
+    width: 155px;
+    margin-left: 55px;
+    justify-self: center;
+    border-color: transparent;
+    background-color: #bfbfbf;
+}
+
+   
+.bienvenida{
+    letter-spacing: 3px;
+    text-align: justify;
+    color: #bfbfbf;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-size: 1.3vw;
+}
+
+.aviso{
+    color: #bfbfbf;
+    text-decoration: none;
+    border: 1px solid #bfbfbf;
+    padding: 3px;
+    width: 10vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.aviso:hover{
+    background-color: #8C292F;
+    cursor: pointer;
+}
+
+.footer{
+    grid-area: footer;
+    min-height: 5vh;
+    display: flex;
+    background: #8C292F;
+    font-size: 12px;
+    color: #bfbfbf;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    border-top: 2px solid #bfbfbf;
+    bottom: 0;
+}
+@media (max-width: 800px)  {
+
+    main{
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+        grid-row: 5% 3fr 1fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        ". . ."
+        ". desc desc"
+            "box1 box1 box1"
+            "box2 . box3"
+            "footer footer footer";
+    }
+    .desc{
+        grid-area: desc;
+    }
+    .box1{
+        grid-area: box1;
+    }
+    .box2{
+        grid-area: box2;
+    }
+    .box3{
+        grid-area: box3;
+    }
+    .footer{
+        grid-area: footer;
+    }
+
+    .bienvenida{
+        font-size: medium;
+        text-align: left;
+    }
+    .botbrands{
+        font-size: small;
+    }
+    hr{
+        display: none;
+    }
+    .tinto{
+        display: none;
+    }
+    .brand{
+        font-size: 30px;
+    }
+    .botbrands{
+        width: auto;
+    }
+    .aviso{
+        width: auto;
+    }
+
+}   
